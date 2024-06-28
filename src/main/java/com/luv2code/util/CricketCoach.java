@@ -1,5 +1,6 @@
-package com.luv2code.springboot.demo.mycoolapp;
+package com.luv2code.util;
 
+import com.luv2code.util.Coach;
 import org.springframework.stereotype.Component;
 
 @Component
