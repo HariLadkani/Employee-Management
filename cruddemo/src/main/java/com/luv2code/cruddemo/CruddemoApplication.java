@@ -23,7 +23,7 @@ public class CruddemoApplication {
 			//queryForStudentsByLastName(studentDAO);
 			//createMultipleStudent(studentDAO);
 
-			updateStudent(studentDAO);
+			deleteAll(studentDAO);
 		};
 	}
 
@@ -96,6 +96,16 @@ public class CruddemoApplication {
 		theStudent.setFirstName("Scooby");
 		studentDAO.update(theStudent);
 
+	}
+
+	private void deleteStudent(StudentDAO studentDAO) {
+		int studentId = 3;
+		studentDAO.delete(studentId);
+
+	}
+
+	private void deleteAll(StudentDAO studentDAO) {
+		System.out.println(studentDAO.deleteAll());
 	}
 
 
