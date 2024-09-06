@@ -20,8 +20,10 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
 		return runner -> {
 			//read student
-			queryForStudentsByLastName(studentDAO);
+			//queryForStudentsByLastName(studentDAO);
 			//createMultipleStudent(studentDAO);
+
+			updateStudent(studentDAO);
 		};
 	}
 
@@ -86,5 +88,16 @@ public class CruddemoApplication {
 		//display id of saved object
 
 	}
+
+	public void updateStudent(StudentDAO studentDAO) {
+		//retrive on id
+		int studentId = 1;
+		Student theStudent = studentDAO.findById(studentId);
+		theStudent.setFirstName("Scooby");
+		studentDAO.update(theStudent);
+
+	}
+
+
 
 }
