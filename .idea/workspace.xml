@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de4406e-2fa5-4f6b-b82d-cfe32e97160e" name="Changes" comment="feat: Add security filter chain with role-based access control&#10;&#10;- Implemented filterChain method to configure HTTP security with role-based access control.&#10;- Restricted access to API endpoints based on roles: &quot;EMPLOYEE&quot;, &quot;MANAGER&quot;, and &quot;ADMIN&quot;.&#10;- Disabled CSRF protection and enabled HTTP Basic authentication.">
+    <list default="true" id="1de4406e-2fa5-4f6b-b82d-cfe32e97160e" name="Changes" comment="feat: Add JDBC-based authorization using users and authorities tables&#10;&#10;- Set up 'users' table to store user credentials (username, password, enabled).&#10;- Set up 'authorities' table to store user roles/permissions with foreign key referencing 'users' table.&#10;- Integrated JDBC connector to handle database-based authorization.&#10;- Configured database schema for referential integrity between 'users' and 'authorities'.&#10;- Ensured roles and credentials are loaded dynamically from the database for authorization.&#10;- Added functionality to enforce role-based access control (RBAC) via JDBC authentication.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1735055841134</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: Add JDBC-based authorization using users and authorities tables&#10;&#10;- Set up 'users' table to store user credentials (username, password, enabled).&#10;- Set up 'authorities' table to store user roles/permissions with foreign key referencing 'users' table.&#10;- Integrated JDBC connector to handle database-based authorization.&#10;- Configured database schema for referential integrity between 'users' and 'authorities'.&#10;- Ensured roles and credentials are loaded dynamically from the database for authorization.&#10;- Added functionality to enforce role-based access control (RBAC) via JDBC authentication.">
+      <created>1735070267234</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735070267234</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +177,7 @@
     <MESSAGE value="feat: Implement basic authentication with Spring Security&#10;&#10;- Integrated Spring Security with basic authentication to secure API endpoints.&#10;- Configured default username and password in application.properties.&#10;- Added proper authorization checks for all endpoints.&#10;- Updated project dependencies and security configurations for production readiness." />
     <MESSAGE value="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security." />
     <MESSAGE value="feat: Add security filter chain with role-based access control&#10;&#10;- Implemented filterChain method to configure HTTP security with role-based access control.&#10;- Restricted access to API endpoints based on roles: &quot;EMPLOYEE&quot;, &quot;MANAGER&quot;, and &quot;ADMIN&quot;.&#10;- Disabled CSRF protection and enabled HTTP Basic authentication." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Add security filter chain with role-based access control&#10;&#10;- Implemented filterChain method to configure HTTP security with role-based access control.&#10;- Restricted access to API endpoints based on roles: &quot;EMPLOYEE&quot;, &quot;MANAGER&quot;, and &quot;ADMIN&quot;.&#10;- Disabled CSRF protection and enabled HTTP Basic authentication." />
+    <MESSAGE value="feat: Add JDBC-based authorization using users and authorities tables&#10;&#10;- Set up 'users' table to store user credentials (username, password, enabled).&#10;- Set up 'authorities' table to store user roles/permissions with foreign key referencing 'users' table.&#10;- Integrated JDBC connector to handle database-based authorization.&#10;- Configured database schema for referential integrity between 'users' and 'authorities'.&#10;- Ensured roles and credentials are loaded dynamically from the database for authorization.&#10;- Added functionality to enforce role-based access control (RBAC) via JDBC authentication." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add JDBC-based authorization using users and authorities tables&#10;&#10;- Set up 'users' table to store user credentials (username, password, enabled).&#10;- Set up 'authorities' table to store user roles/permissions with foreign key referencing 'users' table.&#10;- Integrated JDBC connector to handle database-based authorization.&#10;- Configured database schema for referential integrity between 'users' and 'authorities'.&#10;- Ensured roles and credentials are loaded dynamically from the database for authorization.&#10;- Added functionality to enforce role-based access control (RBAC) via JDBC authentication." />
   </component>
 </project>
