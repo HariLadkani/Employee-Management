@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de4406e-2fa5-4f6b-b82d-cfe32e97160e" name="Changes" comment="Purpose: Tested and implemented Custom Bean for third party class like Amazon S3">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/MycoolappApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/common/BaseballCoach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/common/Coach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/common/CricketCoach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/common/SwimCoach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/common/TennisCoach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/config/SportConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/demo/mycoolapp/rest/DemoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/luv2code/springboot/demo/mycoolapp/MycoolappApplicationTests.java" beforeDir="false" />
+    <list default="true" id="1de4406e-2fa5-4f6b-b82d-cfe32e97160e" name="Changes" comment="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +33,6 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -62,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cruddemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,8 +57,8 @@
   </component>
   <component name="RunManager">
     <configuration name="MycoolappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luv2code.springboot.demo.mycoolapp.MycoolappApplication" />
-      <module name="02-dev-tools-demo" />
+      <option name="MAIN_CLASS_NAME" value="com.luv2code.springboot.cruddemo.CruddemoApplication" />
+      <module name="00-spring-boot-rest-security-employee-starter-code" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.luv2code.springboot.demo.mycoolapp.common.*" />
@@ -140,7 +126,21 @@
       <option name="project" value="LOCAL" />
       <updated>1719627964614</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: Implement basic authentication with Spring Security&#10;&#10;- Integrated Spring Security with basic authentication to secure API endpoints.&#10;- Configured default username and password in application.properties.&#10;- Added proper authorization checks for all endpoints.&#10;- Updated project dependencies and security configurations for production readiness.">
+      <created>1735048674644</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735048674644</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security.">
+      <created>1735050560598</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735050560598</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +161,8 @@
     <MESSAGE value="Author: Hari Lal&#10;Purpose: Tested and implemented injection using Spring Qualifier" />
     <MESSAGE value="Purpose: Tested and implemented spring lazy initialization at class level and at global level" />
     <MESSAGE value="Purpose: Tested and implemented Custom Bean for third party class like Amazon S3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Purpose: Tested and implemented Custom Bean for third party class like Amazon S3" />
+    <MESSAGE value="feat: Implement basic authentication with Spring Security&#10;&#10;- Integrated Spring Security with basic authentication to secure API endpoints.&#10;- Configured default username and password in application.properties.&#10;- Added proper authorization checks for all endpoints.&#10;- Updated project dependencies and security configurations for production readiness." />
+    <MESSAGE value="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security." />
   </component>
 </project>
