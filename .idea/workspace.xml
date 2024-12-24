@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1de4406e-2fa5-4f6b-b82d-cfe32e97160e" name="Changes" comment="feat: Implement basic authentication with Spring Security&#10;&#10;- Integrated Spring Security with basic authentication to secure API endpoints.&#10;- Configured default username and password in application.properties.&#10;- Added proper authorization checks for all endpoints.&#10;- Updated project dependencies and security configurations for production readiness.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" afterDir="false" />
+    <list default="true" id="1de4406e-2fa5-4f6b-b82d-cfe32e97160e" name="Changes" comment="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springboot/cruddemo/security/DemoSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1735048674644</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security.">
+      <created>1735050560598</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735050560598</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +162,7 @@
     <MESSAGE value="Purpose: Tested and implemented spring lazy initialization at class level and at global level" />
     <MESSAGE value="Purpose: Tested and implemented Custom Bean for third party class like Amazon S3" />
     <MESSAGE value="feat: Implement basic authentication with Spring Security&#10;&#10;- Integrated Spring Security with basic authentication to secure API endpoints.&#10;- Configured default username and password in application.properties.&#10;- Added proper authorization checks for all endpoints.&#10;- Updated project dependencies and security configurations for production readiness." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement basic authentication with Spring Security&#10;&#10;- Integrated Spring Security with basic authentication to secure API endpoints.&#10;- Configured default username and password in application.properties.&#10;- Added proper authorization checks for all endpoints.&#10;- Updated project dependencies and security configurations for production readiness." />
+    <MESSAGE value="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Add in-memory user details with role-based access control&#10;&#10;- Configured Spring Security to use in-memory user details.&#10;- Added three users with different roles: ADMIN, MANAGER, and EMPLOYEE.&#10;- Implemented role-based access control for API endpoints.&#10;- Tested endpoint accessibility based on user roles to ensure proper security." />
   </component>
 </project>
