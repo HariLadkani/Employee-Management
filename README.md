@@ -12,3 +12,12 @@ Persistence: Hibernate, JPA
 Testing: JUnit, Mockito
 API Testing: Postman
 Database: MySQL
+
+
+Testing with Postman
+You can test the API endpoints using Postman. The available endpoints include:
+
+GET /employees - Retrieve all employee records
+POST /employees - Add a new employee
+PUT /employees/{id} - Update an existing employee's information
+DELETE /employees/{id} - Delete an employee record
